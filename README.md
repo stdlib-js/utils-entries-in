@@ -24,38 +24,30 @@ limitations under the License.
 
 > Return an array of an object's own and inherited enumerable property key-value pairs.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-entries-in
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-objectEntriesIn = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-entries-in@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var objectEntriesIn = require( 'path/to/vendor/umd/utils-entries-in/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-entries-in@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.objectEntriesIn;
-})();
-</script>
+var objectEntriesIn = require( '@stdlib/utils-entries-in' );
 ```
 
 #### objectEntriesIn( obj )
@@ -96,13 +88,8 @@ var entries = objectEntriesIn( obj );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-entries-in@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectEntriesIn = require( '@stdlib/utils-entries-in' );
 
 function Foo() {
     this.beep = 'boop';
@@ -119,11 +106,6 @@ var entries = objectEntriesIn( obj );
 
 console.log( entries );
 // e.g., => [ ['beep', 'boop'], ['a', {'b':'c'}], ['foo', [ 'bar' ]] ]
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -200,7 +182,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -220,13 +202,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/entries]: https://github.com/stdlib-js/utils-entries/tree/umd
+[@stdlib/utils/entries]: https://github.com/stdlib-js/utils-entries
 
-[@stdlib/utils/from-entries]: https://github.com/stdlib-js/utils-from-entries/tree/umd
+[@stdlib/utils/from-entries]: https://github.com/stdlib-js/utils-from-entries
 
-[@stdlib/utils/keys-in]: https://github.com/stdlib-js/utils-keys-in/tree/umd
+[@stdlib/utils/keys-in]: https://github.com/stdlib-js/utils-keys-in
 
-[@stdlib/utils/values-in]: https://github.com/stdlib-js/utils-values-in/tree/umd
+[@stdlib/utils/values-in]: https://github.com/stdlib-js/utils-values-in
 
 <!-- </related-links> -->
 
