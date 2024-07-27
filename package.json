@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-entries-in",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Return an array of an object's own and inherited enumerable property key-value pairs.",
   "license": "Apache-2.0",
   "author": {
@@ -38,13 +38,13 @@
   },
   "dependencies": {
     "@stdlib/assert-is-object-like": "^0.2.1",
-    "@stdlib/string-format": "^0.2.1",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
+    "@stdlib/string-format": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/assert-is-array": "^0.2.1",
     "@stdlib/random-base-randu": "^0.2.1",
-    "@stdlib/utils-define-property": "^0.2.3",
+    "@stdlib/utils-define-property": "^0.2.4",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
